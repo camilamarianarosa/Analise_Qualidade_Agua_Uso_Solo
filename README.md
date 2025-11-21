@@ -26,7 +26,7 @@ Os testes estatísticos (ANOVA e t-test) confirmaram que o tipo de uso do solo �
 
 - Impacto de Metais Pesados: Chumbo (Pb): O Teste t confirmou que as concentrações médias de Chumbo (Pb) na área Agrícola foram significativamente maiores do que na área Florestal. Sua presença elevada na agricultura pode ser ligada ao uso histórico de certos pesticidas ou outras práticas agropastoris.
 
-Zinco (Zn): A ANOVA mostrou que os níveis de Zinco (Zn) diferem significativamente entre os três tipos de uso do solo, demonstrando o impacto heterogêneo das atividades humanas
+Zinco (Zn): A ANOVA mostrou que os níveis de Zinco (Zn) diferem significativamente entre os três tipos de uso do solo, demonstrando o impacto heterogêneo das atividades humanas.
 
 Conclusão
 
