@@ -1,36 +1,82 @@
-Projeto prático desenvolvido durante o minicurso Estatística para Geoquímica Ambiental, na Semana Acadêmica de Pós-Graduação em Geociências.
+Projeto prático desenvolvido no minicurso Estatística para Geoquímica Ambiental durante a Semana Acadêmica da Pós-Graduação em Geociências.
 
-O uso e ocupação do solo em áreas de bacia hidrográfica são fatores cruciais que influenciam a qualidade da água. Diferentes atividades humanas (como agricultura e urbanização) introduzem poluentes específicos nos ecossistemas aquáticos.
-Este estudo de caso tem como objetivo comparar estatisticamente a concentração de parâmetros de qualidade da água (pH, Nitrato, Fosfato e Metais) em três áreas distintas (Urbana, Floresta e Agrícola) para quantificar o impacto de cada uso do solo.
+O estudo investiga como o uso do solo influencia a qualidade da água em uma bacia hidrográfica, analisando parâmetros físico-químicos e metálicos em 3 áreas:
 
-A análise foi conduzida com base em 9 amostras de água coletadas e distribuídas conforme o tipo de área. 
-Parâmetros:
+- Urbana
+- Floresta
+- Agrícola
+
+Objetivo
+
+1. Quantificar estatisticamente o efeito do uso do solo sobre parâmetros de qualidade da água e identificar:
+2. Diferenças significativas entre áreas
+3. Possíveis rotas de contaminação
+
+Dados
+
+9 amostras de água distribuídas entre os três tipos de área
+
+Variáveis analisadas:
+
 - pH
 - Turbidez
 - Nitrato
 - Fosfato
 - Chumbo (Pb)
-- Zinco (Zn).
+- Zinco (Zn)
 
 Metodologia
-1. Limpeza e Importação: Uso do pacote readxl para ingestão e organização dos dados no R.
-2. Tratamento e Transformação: Utilização do dplyr para manipulação, cálculo de estatísticas descritivas (média, mediana, desvio padrão) e preparação para testes.
-3. Visualização: Geração de Boxplots comparativos para ilustrar a distribuição dos valores em cada categoria de uso do solo.
-4. Testes de Hipótese: Aplicação de Correlação de Pearson (para Nitrato/Fosfato), Teste t de Welch e ANOVA para determinar diferenças estatisticamente significativas entre os grupos (Área).
+1. Importação e limpeza
+
+- readxl, dplyr
+- Padronização e filtragem
+
+2. Estatística descritiva
+
+- Média, mediana, desvio padrão por área
+
+Visualizações
+
+- Boxplots comparativos por uso do solo
+
+Testes de hipótese
+
+- Correlação de Pearson (Nitrato × Fosfato)
+- t-test (Pb)
+- ANOVA (Zn)
 
 Resultados 
 
-Os testes estatísticos (ANOVA e t-test) confirmaram que o tipo de uso do solo é um fator determinante na qualidade da água da bacia.
+Conexão entre nutrientes
 
-- Conexão e Origem de Nutrientes: Correlação Altamente Significativa: Foi observada uma correlação extremamente forte entre o Nitrato e o Fosfato. Isso sugere uma fonte comum de origem para ambos os nutrientes, fortalecendo a hipótese de que o escoamento agrícola (fertilizantes) é o principal vetor de enriquecimento dessas substâncias.
+- Nitrato × Fosfato → Correlação extremamente forte
+- Indica fonte comum, com forte evidência de escoamento agrícola.
 
-- Impacto de Metais Pesados: Chumbo (Pb): O Teste t confirmou que as concentrações médias de Chumbo (Pb) na área Agrícola foram significativamente maiores do que na área Florestal. Sua presença elevada na agricultura pode ser ligada ao uso histórico de certos pesticidas ou outras práticas agropastoris.
+Metais Pesados
 
-Zinco (Zn): A ANOVA mostrou que os níveis de Zinco (Zn) diferem significativamente entre os três tipos de uso do solo, demonstrando o impacto heterogêneo das atividades humanas.
+- Chumbo (Pb)
+  i. t-test → níveis significativamente maiores na área Agrícola
+ ii. Sugere influência de práticas agrícolas / uso histórico de pesticidas
+
+- Zinco (Zn)
+  i. ANOVA → diferenças significativas entre os três usos
+ ii. Impacto heterogêneo relacionado às atividades antrópicas
 
 Conclusão
 
-O projeto demonstra a capacidade de utilizar estatística inferencial (ANOVA, t-test) para quantificar e isolar o impacto ambiental das diferentes atividades de uso do solo nos recursos hídricos.
+O estudo confirma que o uso do solo é determinante na qualidade da água:
+- Áreas agrícolas apresentam maiores concentrações de nutrientes e metais
+- Áreas urbanas exibem variabilidade associada ao escoamento superficial
+- Áreas florestais representam a condição mais preservada
+
+O projeto demonstra capacidade de aplicar estatística inferencial para diagnóstico ambiental.
+
+Ferramentas
+
+- R
+- tidyverse
+- ggplot2
+- dplyr
 
 Autora
 Camila Mariana - Oceanografia (UERJ)
